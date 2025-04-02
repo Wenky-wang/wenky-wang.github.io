@@ -1,0 +1,90 @@
+:root {
+    --primary: #ff9a8b;
+    --secondary: #ebbfc8;
+    --accent: #ff99ac;
+    --background: rgb(230, 230, 230);
+    --text: #585858;
+    --navcolor: rgb(27, 107, 150);
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: var(--background);
+    width: 100vw;
+    height: 100vh;
+}
+#header-bg {
+    width: 100vw;
+    height: 55vh;
+    background-image: url("../assets/header-work.jpg");
+    background-size: cover;
+    position:absolute;
+    z-index: -2;
+}
+#header-bg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 55vh;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, var(--background) 100%);
+    z-index: -2;
+    pointer-events: none;
+}
+#header {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4vh;
+}
+#header span {
+    /* background-color: white; */
+    font-size: 4vh;
+    color: black;
+    padding: 2vh 2vw;
+    border-radius: 10px;
+    /* font-weight: bold; */
+}
+
+#main {
+    display: flex;
+}
+#experience-tree {
+    margin: 2vh 3vw 2vh 3vw;
+    border-left: 1px solid black;
+    padding: 0;
+    list-style-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='-1 -1 2 2'><circle r='1' /></svg>");
+}
+#experience-tree > li {
+    margin-left: 8px;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+}
+
+.job-intro {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+.job-company-logo {
+    position: relative;
+    left: 0;
+    height: 42px;
+    background-color: black;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.job-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+/* .job-company {
+    font-style: italic;
+} */

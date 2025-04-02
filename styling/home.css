@@ -1,0 +1,69 @@
+:root {
+    --primary: #ff9a8b;
+    --secondary: #ebbfc8;
+    --accent: #ff99ac;
+    --background: rgb(230, 230, 230);
+    --text: #585858;
+    --navcolor: rgb(27, 107, 150);
+    /* rgb(27, 107, 150) */
+    /* rgb(49, 99, 173) */
+    /* rgb(206, 122, 112) */
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: var(--background);
+}
+
+#container {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#main {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#about-me-pic {
+    width: 30%;
+    min-width: 350px;
+    object-fit: contain;
+    margin: 3vh 0 3vh 60px;
+    border-radius: 15px;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.2);
+    border: rgba(96,189,166,255) 10px solid;
+}
+#about {
+    flex: 1;
+    background: white;
+    margin: 3vh 3vw 3vh 2.5vw;
+    padding: 3vh 2.5vw;
+    border-radius: 15px;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.2);
+    border: 10px black;
+}
+#about p {
+    font-size: 18px;
+    line-height: 28px;
+}
+#about p span {
+    font-weight: bold;
+    color: rgb(33, 120, 225);
+}
+#about p i {
+    color: rgb(130, 130, 130);
+}
+#about p a {
+    text-decoration: none;
+    color: rgb(93, 67, 143);
+}
+
+h2 {
+    color: var(--primary);
+}
