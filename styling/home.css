@@ -32,9 +32,9 @@ body {
 
 #about-me-pic {
     width: 30%;
-    min-width: 350px;
+    min-width: 260px;
     object-fit: contain;
-    margin: 3vh 0 3vh 60px;
+    margin-left: min(5vw, 60px);
     border-radius: 15px;
     box-shadow: 0 7px 10px rgba(0, 0, 0, 0.2);
     border: rgba(96,189,166,255) 10px solid;
@@ -42,7 +42,7 @@ body {
 #about {
     flex: 1;
     background: white;
-    margin: 3vh 3vw 3vh 2.5vw;
+    margin: 3vh max(3vw,13px) 4vh max(2.5vw,13px);
     padding: 3vh 2.5vw;
     border-radius: 15px;
     box-shadow: 0 7px 10px rgba(0, 0, 0, 0.2);
