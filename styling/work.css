@@ -54,17 +54,21 @@ body {
     display: flex;
 }
 #experience-tree {
-    margin: 2vh 3vw 2vh 3vw;
-    border-left: 1px solid black;
+    margin: 2vh 3vw 2vh 35px;
+    border-left: 2px solid rgb(84, 84, 84);
     padding: 0;
-    list-style-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='-1 -1 2 2'><circle r='1' /></svg>");
 }
 #experience-tree > li {
-    margin-left: 8px;
-    /* border: 1px solid black; */
-    border-radius: 5px;
-    padding: 15px 20px;
-    margin-bottom: 10px;
+    list-style-position: outside;
+    margin-left: 15.5px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(250, 250, 250, 0.5);
+    box-shadow: inset 0 0 30px rgb(203, 203, 203);
+}
+#experience-tree > li::marker {
+    font-size: 25px;
 }
 
 .job-intro {
@@ -82,9 +86,19 @@ body {
     margin-right: 10px;
 }
 .job-title {
-    font-size: 1.2em;
+    font-size: 18px;
     font-weight: bold;
 }
-/* .job-company {
+.job-company {
+    font-size: 15px;
     font-style: italic;
-} */
+    margin-top: 2px;
+}
+.job-desc {
+    font-size: 16px;
+    line-height: 25px;
+}
+.job-desc li {
+    list-style-type: disc;
+    margin-top: 5px;
+}
