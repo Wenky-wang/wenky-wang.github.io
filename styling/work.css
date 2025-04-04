@@ -12,7 +12,9 @@ body {
     overflow-x: hidden;
     background-color: var(--background);
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 #header-bg {
     width: 100vw;
