@@ -1,0 +1,119 @@
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#header-bg {
+    width: 100vw;
+    height: 55vh;
+    background-image: url("../assets/header-edu.png");
+    background-size: 50%;
+    position: absolute;
+    z-index: -2;
+}
+#header-bg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 65vh;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, var(--background) 100%);
+    z-index: -2;
+    pointer-events: none;
+}
+#header {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4vh;
+}
+#header span {
+    /* background-color: white; */
+    font-size: 4vh;
+    color: black;
+    padding: 2vh 2vw;
+    border-radius: 10px;
+    /* font-weight: bold; */
+}
+
+#main {
+    display: flex;
+    flex: 1;
+}
+
+#edu-cer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 2vh 3vw 4vh 35px;
+}
+
+#cert {
+    width: fit-content;
+    background-color: rgba(250, 250, 250, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+}
+.cer-edu-title {
+    text-align: left;
+    font-size: 22px;
+    color: var(--primary);
+    font-weight: bold;
+}
+.cer-name {
+    text-align: left;
+    font-size: 15x;
+    padding-right: 20px;
+}
+.cer-date {
+    text-align: left;
+    font-size: 15px;
+    font-style: italic;
+}
+
+#education {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    background-color: rgba(250, 250, 250, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+}
+#edu-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;
+    flex-wrap: wrap;
+}
+.edu-card {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+}
+.edu-image {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.edu-desc {
+    flex: 1;
+    margin-top: 10px;
+}
+.image-douglas {
+    background-image: url("../assets/education/douglas.jpg");
+    background-position-x: left;
+    background-position-y: top;
+}
+.image-cuhk {
+    background-image: url("../assets/education/cuhk.jpg");
+    background-position: center;
+}

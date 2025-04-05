@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wenqi Wang - Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styling/global.css">
+    <link rel="stylesheet" href="./styling/nav.css">
+    <link rel="stylesheet" href="./styling/footer.css">
+    <link rel="stylesheet" href="./styling/education.css">
+</head>
+
+<body>
+    <div id="header-bg"></div>
+    <div id="header"><span>Education and Certifications</span></div>
+
+    <div id="main">
+        <nav id="nav">
+            <ul>
+                <span data-aos="fade-up" data-aos-delay="150"><a href="./index.html"><li class="home-icon bi bi-house-heart-fill"></li></a></span>
+                <span data-aos="fade-up" data-aos-delay="300"><a href="./work.html"><li class="work-icon bi bi-pc-display"></li></a></span>
+                <span data-aos="fade-up" data-aos-delay="450"><a href="./education.html"><li class="education-icon bi bi-book-half"></li></a></span>
+                <span data-aos="fade-up" data-aos-delay="600"><a href="./project.html"><li class="project-icon bi bi-tools"></li></a></span>
+                <span data-aos="fade-up" data-aos-delay="750"><a href="./interest.html"><li class="interest-icon bi bi-file-music"></li></a></span>
+            </ul>
+        </nav>
+
+        <div id="edu-cer">
+            <table id="cert" data-aos="fade-right" data-aos-delay="0" data-aos-duration="600">
+                <tr>
+                    <td colspan="2" class="cer-edu-title">Professional Certifications</td>
+                </tr>
+                <tr>
+                    <td class="cer-name">AWS Certified Cloud Practitioner (CLF-C01)</td>
+                    <td class="cer-date">Issued: March 2024</td>
+                </tr>
+                <tr>
+                    <td class="cer-name">IBM Data Science Professional Certificate</td>
+                    <td class="cer-date">Issued: May 2021</td>
+                </tr>
+            </table>
+
+            <div id="education" data-aos="fade-left" data-aos-delay="300"  data-aos-duration="600">
+                <div class="cer-edu-title">Education Experiences</div>
+                <div id="edu-main">
+                    <div class="edu-card">
+                        <img class="edu-image" src="assets/education/cuhk.jpg" />
+                        <div class="edu-desc">
+                            <strong>The Chinese University of Hong Kong</strong><br />
+                            Bachelor of Science, Statistics<br />
+                            Graduated 2020
+                        </div>
+                    </div>
+                    <div class="edu-card">
+                        <img class="edu-image" src="assets/education/douglas.jpg" />
+                        <div class="edu-desc">
+                            <strong>Douglas College</strong><br />
+                            Post-Baccalaureate Diploma, Computer and Information Systems<br />
+                            Graduated 2023
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="footer">&copy; Made by Wenqi Wang</div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
