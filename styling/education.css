@@ -6,7 +6,7 @@ body {
 }
 #header-bg {
     width: 100vw;
-    height: 55vh;
+    height: 60vh;
     background-image: url("../assets/header-edu.png");
     background-size: 50%;
     position: absolute;
@@ -18,7 +18,7 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 65vh;
+    height: 60vh;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, var(--background) 100%);
     z-index: -2;
     pointer-events: none;
