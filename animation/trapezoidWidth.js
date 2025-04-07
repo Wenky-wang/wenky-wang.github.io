@@ -11,7 +11,10 @@ function adjustClipPath() {
     titleWidthPercent = Math.min(100-imageWidthPercent+20, 90)
     title.style.width = `${titleWidthPercent}%`
     title.style.clipPath = `polygon(0 0, 100% 0, ${(100 - imageWidthPercent)/titleWidthPercent*100}% 100%, 0 100%)`;
-}
+}   
 
-window.addEventListener('load', adjustClipPath);
-window.addEventListener('resize', adjustClipPath);
+
+if (window.matchMedia("(min-width: 500px)").matches) {
+    window.addEventListener('load', adjustClipPath);
+    window.addEventListener('resize', adjustClipPath);
+}
