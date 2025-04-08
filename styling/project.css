@@ -5,43 +5,14 @@ body {
     flex-direction: column;
 }
 #header-bg {
-    width: 100vw;
-    height: 55vh;
     background-image: url("../assets/header-project.png");
     background-size: 50%;
-    position: absolute;
-    z-index: -2;
 }
-#header-bg::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 55vh;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, var(--background) 100%);
-    z-index: -2;
-    pointer-events: none;
-}
-#header {
-    width: 100vw;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 4vh;
-}
-#header span {
-    /* background-color: white; */
-    font-size: 4vh;
-    color: black;
-    padding: 2vh 2vw;
-    border-radius: 10px;
-    /* font-weight: bold; */
-}
+
 
 #main {
     display: flex;
+    margin-top: 2vh;
 }
 #projects {
     display: flex;
