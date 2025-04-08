@@ -1,0 +1,64 @@
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#header-bg {
+    background-image: url("../assets/header-more.jpg");
+}
+@media screen and (min-width: 500px) {
+    #header-bg { 
+        background-size: 45%;
+    }
+}
+@media screen and (max-width: 500px) {
+    #header-bg { 
+        background-size: contain;
+    }
+}
+
+
+#main {
+    display: flex;
+    margin-top: 2vh;
+}
+#per-int {
+    margin: 0 4vw;
+}
+#per {
+    background-color: rgba(250, 250, 250, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 3vh;
+    line-height: 25px;
+}
+.not-first-line {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+#card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media only screen and (min-width: 500px) {
+    .card {
+        width: 25%;
+        margin: 0;
+        transition:all 0.3s ease-in-out;
+        height: fit-content;
+    }
+    .card:hover {
+        width: 40%;
+        transition-duration: 0.7s;
+    }
+
+}
+@media only screen and (max-width: 500px) {
+    .card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
