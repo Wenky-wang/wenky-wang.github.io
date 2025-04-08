@@ -1,5 +1,5 @@
 function adjustClipPath() {
-    const header = document.getElementById('header');
+    const header = document.getElementById('opening');
     const img = document.getElementById('opening-pic');
     const title = document.getElementById('title');
 
