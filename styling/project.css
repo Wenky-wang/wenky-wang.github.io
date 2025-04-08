@@ -22,10 +22,14 @@ body {
 }
 .max-w-sm {
     height: fit-content;
-    padding: 1.7vh;
+    padding: 1.7vh 1.7vh 0.5vh 1.7vh;
     background-color: white;
     margin: 0 2vh 2vh 2vh;
 }
 .second-line {
     margin-top: 5px;
+}
+.text-white {
+    margin: 0;
+    padding: 3px 0;
 }
